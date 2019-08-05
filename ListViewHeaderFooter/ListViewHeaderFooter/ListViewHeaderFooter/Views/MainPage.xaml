@@ -1,10 +1,9 @@
-# Header and footer in vertical mode when ListView is in horizontal mode
-
-By customizing the [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html), layout the header and footer items in `Vertical` mode with listview items in `Horizontal` mode.
-
-```
-<ContentPage >
-
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutoFitSample.MainPage"
+             xmlns:local="clr-namespace:AutoFitSample"
+             xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <ContentPage.BindingContext>
         <local:ListViewAutoFitContentViewModel x:Name="ViewModel"/>
     </ContentPage.BindingContext>
@@ -44,5 +43,3 @@ By customizing the [SfListView](https://help.syncfusion.com/cr/cref_files/xamari
             </local:SfListViewExt.ItemTemplate>
         </local:SfListViewExt>
 </ContentPage>
-```
-To know more about ListView header and footer, please refer our documentation [here](https://help.syncfusion.com/xamarin/sflistview/headerandfooter)
